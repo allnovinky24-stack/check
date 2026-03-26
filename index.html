@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>M3U8 Video Feed</title>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -108,7 +111,9 @@
 
         // Initialize the page once the DOM is fully loaded
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('data.json')
+            // Cache-busting: Add timestamp to force fresh data.json fetch
+            const cachebustedUrl = `data.json?v=${Date.now()}`;
+            fetch(cachebustedUrl)
                 .then(response => response.json())
                 .then(data => {
                     renderPosts(data);
