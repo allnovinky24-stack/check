@@ -1,0 +1,33 @@
+{
+  "headerTitle": "StreamFeed Pro",
+  "streams": [
+    {
+      "id": 1,
+      "title": "Big Buck Bunny (Test Stream)",
+      "description": "Classic open-source animated short film used for video testing.",
+      "m3u8Link": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+      "author": "Mux"
+    },
+    {
+      "id": 2,
+      "title": "Tears of Steel",
+      "description": "Live streaming test feature showcasing adaptive bitrate streaming.",
+      "m3u8Link": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8",
+      "author": "Unified Streaming"
+    },
+    {
+      "id": 3,
+      "title": "Akamai Live Stream Test",
+      "description": "Standard master playlist test stream provided by Akamai CDN.",
+      "m3u8Link": "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8",
+      "author": "Akamai"
+    },
+    {
+      "id": 4,
+      "title": "Apple Advanced Stream",
+      "description": "Apple's official test stream for HTTP Live Streaming (HLS) evaluation.",
+      "m3u8Link": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8",
+      "author": "Apple"
+    }
+  ]
+}
